@@ -1,0 +1,188 @@
+body{
+	background-color: #F6F5F0;
+	font-family: 'Roboto', sans-serif;
+}
+.site{
+	min-height: calc(100vh - 61px);
+}
+.row{
+	margin: 0;
+}
+.container{
+	padding: 70px 0;
+}
+p, li{
+	color: #444;
+	font-size: 14px;
+}
+
+header, .navbar{
+	background-color: #34362C;
+}
+#nav-container{
+	padding-top: 0;
+	padding-bottom: 0;
+}
+#logo{
+	height: 53px;
+}
+.navbar-brand{
+	padding: 0;
+	color: #FFF;
+}
+.navbar-brand:hover{
+	color: #FFF;
+}
+#navbar-links a, #navbar-links .button{
+	color: #FFF;
+}
+#navbar-links .button{
+	background: none;
+	border: none;
+	padding: 15px;
+	cursor: pointer;
+	outline: inherit;
+}
+.navbar-expand-lg .navbar-nav .nav-link{
+	padding: 1rem .8rem;
+}
+
+.main-title{
+	color: #444;
+	margin: 0 0 65px 0;
+	font-size: 40px;
+	text-align: center;
+}
+.main-title::after{
+	content: "";
+	border-top: 2px solid #333;
+	width: 15%;
+	position: absolute;
+	top: 60px;
+	left: 42.5%;
+}
+.about-list{
+	list-style: none;
+	padding-left: 0;
+}
+.about-list li{
+	line-height: 30px;
+}
+.about-list i {
+	color: #65DAF9;
+	margin-right: 15px;
+}
+
+.destaque{
+	height: 355px;
+}
+.destaque img{
+	max-height: 170px;
+}
+
+footer{
+	background-color: #FFF;
+}
+#copy-area .container{
+	padding: 20px 0;
+	text-align: center;
+}
+#copy-area .container p{
+	margin-bottom: 0;
+}
+#copy-area .container a{
+	font-weight: bold;
+	color: #444;
+}
+#copy-area .container a:hover{
+	text-decoration: none;
+	color: #3EC1D5;
+}
+
+#login{
+	width: 400px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	box-shadow: 1px 5px 20px rgb(195, 195, 195);
+}
+#login h5{
+	font-size: 2em;
+	margin-bottom: 20px;
+}
+
+.commentary{
+	background-color: #FFF;
+	padding: 5px;
+	border: 1px solid #CCC;
+	margin-bottom: 5px;
+}
+.commentary .usuario{
+	font-size: 1.1em;
+	font-weight: bold;
+}
+.commentary .comentario{
+	font-size: 0.8em;
+}
+#button-addon::after{
+	content: "Enviar comentário";
+}
+.filtro{
+	width: 29%!important;
+}
+
+.icon-info img{
+	height: 100px;
+}
+.card .info-title {
+    margin: 30px 0 15px;
+    padding: 0 15px;
+    color: #2c2c2c;
+    font-weight: 700;
+    font-size: 3.5em;
+}
+.card .stats-title {
+    margin-bottom: 5px;
+    color: #9a9a9a;
+    font-weight: 400;
+    font-size: 2em;
+}
+
+textarea{
+	resize: none;
+}
+
+@media (max-width: 452px) {
+	.main-title{
+		font-size: 32px;
+	}
+	.main-title::after{
+		width: 20%;
+		top: 45px;
+		left: 40.5%;
+	}
+	.custom-select.filtro{
+		width: 47%!important;
+		margin-right: 20px;
+	}
+	#button-addon{
+		width: 65px;
+	}
+	#button-addon::after{
+		content: "Enviar";
+	}
+
+}
+
+@media (max-width: 768px) {
+	.filtro{
+		width: 21%!important;
+	}
+	.card .info-title{
+		font-size: 2.5em;
+	}
+	.card .stats-title{
+		font-size: 1.3em;
+	}
+}
